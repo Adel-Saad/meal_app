@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:meal_app/Widgets/meal_item.dart';
 import '../Modules/meal.dart';
-import '../Views/Widgets/meal_item.dart';
 import '../dummy_data.dart';
 
 class CategoryMealsScreen extends StatefulWidget {

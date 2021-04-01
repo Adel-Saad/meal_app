@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:meal_app/Views/favorites_screen.dart';
 import './Views/category_meal_screen.dart';
 import './Views/category_screen.dart';
 import './Views/meal_details_screen.dart';
+import 'Views/tabs_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,11 +14,13 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: CategoriesScreen.id,
+      initialRoute: TabsScreen.id,
       routes: {
         CategoriesScreen.id: (contex) => CategoriesScreen(),
         CategoryMealsScreen.id: (context) => CategoryMealsScreen(),
-        MealDetailsScreen.id: (context) => MealDetailsScreen()
+        MealDetailsScreen.id: (context) => MealDetailsScreen(),
+        FavoritsScreen.id: (context) => FavoritsScreen(),
+        TabsScreen.id: (context) => TabsScreen(),
       },
       theme: ThemeData(
         primarySwatch: Colors.pink,
